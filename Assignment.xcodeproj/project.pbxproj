@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3285B9C1264C4A7400D4AC99 /* AssignmentNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285B9C0264C4A7300D4AC99 /* AssignmentNetworkTests.swift */; };
 		32EEEA75264A5497006DE4B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EEEA74264A5497006DE4B8 /* AppDelegate.swift */; };
 		32EEEA77264A5497006DE4B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EEEA76264A5497006DE4B8 /* SceneDelegate.swift */; };
 		32EEEA79264A5497006DE4B8 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EEEA78264A5497006DE4B8 /* BookmarkViewController.swift */; };
@@ -87,6 +88,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3285B9C0264C4A7300D4AC99 /* AssignmentNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentNetworkTests.swift; sourceTree = "<group>"; };
 		32EEEA71264A5497006DE4B8 /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32EEEA74264A5497006DE4B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32EEEA76264A5497006DE4B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3285B9C8264C4CB700D4AC99 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				32EEEA78264A5497006DE4B8 /* BookmarkViewController.swift */,
+				32EEEBCD264ADA69006DE4B8 /* AddBookmarkViewController.swift */,
+				32EEEBEA264B0122006DE4B8 /* DetailsViewController.swift */,
+				32EEEBDA264AF953006DE4B8 /* MapViewController.swift */,
+				32EEEBFA264BE997006DE4B8 /* WebViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3285B9C9264C4CEE00D4AC99 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				32EEEA74264A5497006DE4B8 /* AppDelegate.swift */,
+				32EEEA76264A5497006DE4B8 /* SceneDelegate.swift */,
+				32EEEB08264A8192006DE4B8 /* Utilities.swift */,
+				32EEEA7A264A5498006DE4B8 /* Main.storyboard */,
+				32EEEA80264A549A006DE4B8 /* Assets.xcassets */,
+				32EEEA82264A549A006DE4B8 /* LaunchScreen.storyboard */,
+				32EEEA7D264A5498006DE4B8 /* Assignment.xcdatamodeld */,
+				32EEEB89264ABE93006DE4B8 /* locationsSQLite.sqlite */,
+			);
+			name = SupportingFiles;
+			path = Views;
+			sourceTree = "<group>";
+		};
 		32EEEA68264A5497006DE4B8 = {
 			isa = PBXGroup;
 			children = (
@@ -206,21 +236,10 @@
 				32EEEB54264A98A6006DE4B8 /* Models */,
 				32EEEB80264AA4D0006DE4B8 /* Extensions */,
 				32EEEB15264A8254006DE4B8 /* Services */,
-				32EEEA74264A5497006DE4B8 /* AppDelegate.swift */,
-				32EEEA76264A5497006DE4B8 /* SceneDelegate.swift */,
-				32EEEA78264A5497006DE4B8 /* BookmarkViewController.swift */,
-				32EEEBCD264ADA69006DE4B8 /* AddBookmarkViewController.swift */,
-				32EEEBEA264B0122006DE4B8 /* DetailsViewController.swift */,
-				32EEEBDA264AF953006DE4B8 /* MapViewController.swift */,
-				32EEEBFA264BE997006DE4B8 /* WebViewController.swift */,
+				3285B9C8264C4CB700D4AC99 /* Controllers */,
 				32EEEBD2264ADCA1006DE4B8 /* Views */,
-				32EEEB08264A8192006DE4B8 /* Utilities.swift */,
-				32EEEA7A264A5498006DE4B8 /* Main.storyboard */,
-				32EEEA80264A549A006DE4B8 /* Assets.xcassets */,
-				32EEEA82264A549A006DE4B8 /* LaunchScreen.storyboard */,
+				3285B9C9264C4CEE00D4AC99 /* SupportingFiles */,
 				32EEEA85264A549A006DE4B8 /* Info.plist */,
-				32EEEA7D264A5498006DE4B8 /* Assignment.xcdatamodeld */,
-				32EEEB89264ABE93006DE4B8 /* locationsSQLite.sqlite */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -229,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				32EEEA8E264A549A006DE4B8 /* AssignmentTests.swift */,
+				3285B9C0264C4A7300D4AC99 /* AssignmentNetworkTests.swift */,
 				32EEEA90264A549A006DE4B8 /* Info.plist */,
 			);
 			path = AssignmentTests;
@@ -556,6 +576,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32EEEA8F264A549A006DE4B8 /* AssignmentTests.swift in Sources */,
+				3285B9C1264C4A7400D4AC99 /* AssignmentNetworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
